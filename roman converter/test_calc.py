@@ -69,6 +69,10 @@ def test_make_roman():
     calc_9999 = Calculator(9999)
     assert calc_9999.make_roman() == 'MMMMMMMMMCMXCIX'
 
+    calc_minus1 = Calculator(-1)
+    with pytest.raises(UserWarning):
+        calc_minus1.make_roman()
+
     calc_too_long = Calculator(100000)
     with pytest.raises(UserWarning):
         calc_too_long.make_roman()
