@@ -123,17 +123,4 @@ class Calculator(ErrorChecker):
     @staticmethod
     def _check_for_nine(part_of_num, roman_num):
         return part_of_num / roman_num == 0.9
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    
